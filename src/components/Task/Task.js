@@ -4,8 +4,7 @@ import {TaskCard} from './TaskCard';
 import {BoxCard} from '../boxCard/BoxCard';
 import './Task.css';
 export const Task = (props) => {
-   
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(true);
     const [emp, setEmp] = useState([
         { id: 1, name: 'Sachin', designation: 'Team Lead', active: false},
         { id: 2, name: 'Anil', designation: 'Team Lead', active: false},
@@ -33,15 +32,15 @@ export const Task = (props) => {
                 <div className='row justify-content-center'>
                     <BoxCard result="success">
                         <div className="fw-bold">Card 1</div>
-                        <div className="description">Lorem ipsum</div>
+                        <div className="description">Sample text 1</div>
                     </BoxCard>
                     <BoxCard result="warning">
                         <div className="fw-bold">Card 2</div>
-                        <div className="description">Lorem ipsum</div>
+                        <div className="description">Sample text 2</div>
                     </BoxCard>
                     <BoxCard result="alert">
                         <div className="fw-bold">Card 3</div>
-                        <div className="description">Lorem ipsum</div>
+                        <div className="description">Sample text 3</div>
                     </BoxCard>
                 
                 </div>
